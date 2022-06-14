@@ -1,0 +1,26 @@
+.messageList {
+	border-bottom: 1px solid #444444;
+	cursor: pointer;
+}
+.messageList:hover {
+	background-color: #242424;
+}
+
+/* .notRead::after {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 500px;
+	margin-top: 10px;
+	left: 30vw;
+	background-color: #2041af;
+} */
+
+.messageListValue,
+.messageListUsername {
+	margin-left: 1rem;
+}

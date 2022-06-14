@@ -1,0 +1,17 @@
+.messageIcon::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 40px;
+	background-color: #d12a2a;
+}
+
+.notificationList {
+	position: absolute;
+	top: 4rem;
+	right: 5rem;
+}

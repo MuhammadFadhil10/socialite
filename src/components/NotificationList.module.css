@@ -1,0 +1,10 @@
+.notificationTab {
+	filter: blur(100%);
+	border-radius: 5%;
+	max-height: 60vh;
+	overflow: scroll;
+}
+
+.notificationTab::-webkit-scrollbar {
+	display: none;
+}
