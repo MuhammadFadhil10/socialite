@@ -9,6 +9,7 @@ import Classes from './Message.module.css';
 import useFetchPost from '../hook/useFetchPost';
 
 const Message = () => {
+	document.title = 'Messages';
 	const socket = openSocket(`${process.env.REACT_APP_API_URI}`);
 	const navigate = useNavigate();
 	const myId = localStorage.getItem('user-id');

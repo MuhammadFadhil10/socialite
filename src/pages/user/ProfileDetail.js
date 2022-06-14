@@ -8,11 +8,12 @@ import useFetchGet from '../../hook/useFetchGet';
 import useFetchPost from '../../hook/useFetchPost';
 
 const ProfileDetail = () => {
+	document.title = paramsUserName;
 	const mount = useRef(false);
 	const jwtToken = localStorage.getItem('user-token');
 	const myUserName = localStorage.getItem('user-name');
 	const myId = localStorage.getItem('user-id');
-	const io = openSocket('http://localhost:5000');
+	const io = openSocket(`${process.env.REACT_APP_API_URI}`);
 
 	const paramsUserName = useParams().userName;
 	const navigate = useNavigate();

@@ -12,6 +12,7 @@ import { useParams } from 'react-router-dom';
 import sendMessageIcon from '../../assets/icons/send.png';
 
 const Message = () => {
+	document.title = userInfo.user_name;
 	const jwtToken = localStorage.getItem('user-token');
 	const myId = localStorage.getItem('user-id');
 	const myProfilePicture = localStorage.getItem('profile-picture');

@@ -11,7 +11,7 @@ const Explore = () => {
 				style={{ padding: '5rem 1rem' }}
 				className='container bg-dark'
 			>
-				<h1>hello from explore</h1>
+				<h1>Coming Soon</h1>
 			</Container>
 		</>
 	);

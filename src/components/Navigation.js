@@ -17,13 +17,13 @@ import exploreIcon from '../assets/icons/explore.png';
 import postIcon from '../assets/icons/post.png';
 import notificationIcon from '../assets/icons/notification.png';
 import messageIcon from '../assets/icons/message.png';
+import logo from '../assets/icons/socialite-logo.png';
 import NotificationClass from './NotificationList.module.css';
 import useFetchGet from '../hook/useFetchGet';
 import useFetchDelete from '../hook/useFetchDelete';
 import Responsive from '../responsive.module.css';
 
 const Navigation = ({ triggerGetPost, setTriggerGetPost }) => {
-	const mount = useRef(false);
 	const navigate = useNavigate();
 
 	const jwtToken = localStorage.getItem('user-token');
@@ -163,12 +163,12 @@ const Navigation = ({ triggerGetPost, setTriggerGetPost }) => {
 				<Navbar.Brand href='/home'>
 					<img
 						alt=''
-						src=''
+						src={logo}
 						width='30'
 						height='30'
 						className='d-inline-block align-top'
 					/>{' '}
-					Social Dummy
+					SociaLite
 				</Navbar.Brand>
 				<div className='navbar-pages d-flex'>
 					<div className='d-flex justify-content-evenly'>

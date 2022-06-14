@@ -7,6 +7,7 @@ import useFetchGet from '../../hook/useFetchGet';
 import useFetchPostImage from '../../hook/useFetchPostImage';
 
 const EditProfile = () => {
+	document.title = 'socialite - edit profile';
 	const navigate = useNavigate();
 	const myUserName = localStorage.getItem('user-name');
 	const [isSaving, setIsSaving] = useState(false);

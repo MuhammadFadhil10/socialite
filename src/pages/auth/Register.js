@@ -8,21 +8,14 @@ import '../../global.css';
 import Responsive from '../../responsive.module.css';
 
 const Register = () => {
-	document.title = 'SociaLite';
+	document.title = 'Socialite';
 	const navigate = useNavigate();
 	const mount = useRef(false);
 	const [trigger, setTrigger] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 
 	const [flip, set] = useState(true);
-	const words = [
-		'uniqueness',
-		'skills',
-		'idea',
-		'moment',
-		'happiness',
-		'coolside',
-	];
+	const words = ['uniqueness', 'moment', 'happiness'];
 
 	const [userName, setUsername] = useState('');
 	const [email, setEmail] = useState('');
@@ -67,11 +60,11 @@ const Register = () => {
 
 	// react-spring
 	const { scroll } = useSpring({
-		scroll: (words.length - 1) * 50,
-		from: { scroll: 0 },
+		scroll: (words.length - 1) * 100,
+		from: { scroll: 10 },
 		reset: true,
 		reverse: flip,
-		delay: 1000,
+		delay: 0,
 		config: config.molasses,
 		onRest: () => set(!flip),
 	});
